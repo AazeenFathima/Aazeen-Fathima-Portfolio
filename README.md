@@ -1,8 +1,6 @@
 # Aazeen Fathima M — Personal Portfolio Website
 
-An elegant, editorial-style personal portfolio website for **Aazeen Fathima M**, Computer Science student and aspiring Software Developer.
 
-![Aazeen Fathima Portfolio Preview](public/assets/profile.jpg)
 
 ---
 
