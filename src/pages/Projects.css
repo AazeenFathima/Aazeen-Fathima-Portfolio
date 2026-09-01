@@ -1,0 +1,86 @@
+/* Projects Page Styles */
+.projects-showcase-flow {
+  margin-bottom: 64px;
+}
+
+.project-methodology-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  box-shadow: var(--shadow-sm);
+}
+
+.methodology-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background-color: var(--accent-subtle);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 16px;
+}
+
+.methodology-title {
+  font-size: clamp(24px, 2.8vw, 32px);
+  color: var(--text-primary);
+  margin-bottom: 32px;
+}
+
+.methodology-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.methodology-step {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+.step-number {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.methodology-step h4 {
+  font-size: 16px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.methodology-step p {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.methodology-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-light);
+}
+
+@media (max-width: 900px) {
+  .methodology-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .project-methodology-card {
+    padding: 32px 24px;
+  }
+}

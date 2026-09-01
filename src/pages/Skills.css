@@ -1,0 +1,84 @@
+/* Skills Page Styles */
+.skills-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 56px;
+}
+
+.skills-matrix-callout {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  box-shadow: var(--shadow-sm);
+}
+
+.matrix-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.matrix-icon {
+  color: var(--accent);
+  margin-top: 4px;
+}
+
+.matrix-title {
+  font-size: clamp(22px, 2.5vw, 28px);
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.matrix-desc {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+}
+
+.application-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin-bottom: 36px;
+}
+
+.matrix-item {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+.matrix-item-title {
+  font-size: 16px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.matrix-item p {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.skills-bottom-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-light);
+}
+
+@media (max-width: 900px) {
+  .skills-categories-grid,
+  .application-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-matrix-callout {
+    padding: 32px 24px;
+  }
+}

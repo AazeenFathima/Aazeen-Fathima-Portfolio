@@ -1,0 +1,234 @@
+/* Home Specific Styles */
+.career-objective-section {
+  padding: 40px 0 60px;
+}
+
+.objective-box {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 48px 56px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.objective-tag {
+  font-size: 18px;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.objective-quote {
+  font-family: var(--font-serif);
+  font-size: clamp(20px, 2.5vw, 28px);
+  color: var(--text-primary);
+  line-height: 1.45;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.objective-author {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.author-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.author-role {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Section Header Rows */
+.section-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.section-main-title {
+  font-size: clamp(28px, 3.5vw, 40px);
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+.view-all-btn {
+  white-space: nowrap;
+}
+
+.section-footer-cta {
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* Skills Editorial Box */
+.skills-editorial-box {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  box-shadow: var(--shadow-sm);
+}
+
+.skills-box-text {
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.key-skills-checkmarks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.check-icon {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.skill-mini-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mini-category-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+}
+
+.mini-cat-title {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.mini-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.mini-skill-pill {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-primary);
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-medium);
+  padding: 3px 10px;
+  border-radius: var(--radius-sm);
+}
+
+/* CTA Card */
+.cta-card {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border-radius: var(--radius-lg);
+  padding: 64px 56px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: center;
+  border: 1px solid var(--border-dark);
+}
+
+.cta-eyebrow {
+  font-size: 20px;
+  color: var(--accent);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.cta-headline {
+  font-size: clamp(26px, 3.2vw, 36px);
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.cta-text {
+  color: var(--text-light-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cta-buttons .btn-secondary {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+.cta-buttons .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+}
+
+@media (max-width: 900px) {
+  .section-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .skills-editorial-box {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+  }
+  .cta-card {
+    grid-template-columns: 1fr;
+    padding: 40px 24px;
+  }
+  .objective-box {
+    padding: 32px 24px;
+  }
+}

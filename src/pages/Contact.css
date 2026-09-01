@@ -1,0 +1,164 @@
+/* Contact Page Styles */
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.contact-info-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+}
+
+.channels-title {
+  font-size: clamp(26px, 3vw, 36px);
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.channels-desc {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.channel-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.channel-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.channel-card:hover {
+  background-color: #FFFFFF;
+  border-color: var(--accent);
+  transform: translateX(4px);
+  box-shadow: var(--shadow-sm);
+}
+
+.channel-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-light);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.channel-card:hover .channel-icon-box {
+  background-color: var(--accent);
+  color: #FFFFFF;
+  border-color: var(--accent);
+}
+
+.channel-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-grow: 1;
+}
+
+.channel-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.channel-value {
+  font-size: 14.5px;
+  color: var(--text-primary);
+  word-break: break-all;
+}
+
+.channel-arrow {
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.channel-card:hover .channel-arrow {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+/* Availability Box */
+.availability-box {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.avail-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.avail-icon {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.avail-item strong {
+  color: var(--text-primary);
+  margin-right: 4px;
+}
+
+/* Resume CTA */
+.contact-resume-cta {
+  padding-top: 24px;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-resume-cta h4 {
+  font-size: 16px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.contact-resume-cta p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+@media (max-width: 960px) {
+  .contact-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .contact-info-card {
+    padding: 28px 20px;
+  }
+}

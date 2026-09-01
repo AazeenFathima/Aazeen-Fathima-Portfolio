@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="neuraBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#090D16"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="userBubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C26D53"/>
+      <stop offset="100%" stop-color="#A5543B"/>
+    </linearGradient>
+    <linearGradient id="aiBubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" rx="16" fill="url(#neuraBg)"/>
+
+  <!-- Subtle Neural Network Connections -->
+  <circle cx="120" cy="100" r="3" fill="#38BDF8" fill-opacity="0.4"/>
+  <circle cx="280" cy="60" r="4" fill="#818CF8" fill-opacity="0.5"/>
+  <circle cx="680" cy="120" r="3" fill="#38BDF8" fill-opacity="0.3"/>
+  <circle cx="720" cy="380" r="4" fill="#818CF8" fill-opacity="0.4"/>
+  <path d="M120 100 L280 60 M280 60 L450 80 M680 120 L720 380" stroke="#38BDF8" stroke-opacity="0.1" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- App Header Bar -->
+  <rect x="60" y="40" width="680" height="60" rx="12" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+  <circle cx="95" cy="70" r="16" fill="url(#glowGrad)"/>
+  <text x="91" y="76" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800">⚖</text>
+  
+  <text x="125" y="66" fill="#FFFFFF" font-family="'Playfair Display', serif" font-size="16" font-weight="700">NEURA — Judicial Assistant</text>
+  <text x="125" y="84" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Dept. of Justice · NJDG & eCourts Integrated Gateway</text>
+  
+  <rect x="600" y="55" width="120" height="30" rx="15" fill="#0F172A" stroke="#38BDF8" stroke-opacity="0.4"/>
+  <text x="614" y="74" fill="#38BDF8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">● Live Prototype</text>
+
+  <!-- Chat Workspace -->
+  <rect x="60" y="115" width="680" height="335" rx="12" fill="#0F172A" fill-opacity="0.7" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Citizen Message 1 -->
+  <rect x="360" y="145" width="360" height="55" rx="14" fill="url(#userBubble)"/>
+  <text x="380" y="168" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500">How do I track my CNR case number status</text>
+  <text x="380" y="186" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500">under the National Judicial Data Grid?</text>
+
+  <!-- NEURA AI Response -->
+  <circle cx="95" cy="245" r="14" fill="url(#glowGrad)"/>
+  <text x="91" y="250" fill="#0F172A" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800">AI</text>
+  <rect x="125" y="225" width="550" height="110" rx="14" fill="url(#aiBubble)" stroke="#475569" stroke-width="1"/>
+  <text x="145" y="250" fill="#38BDF8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">NEURA Legal Intelligence Engine</text>
+  <text x="145" y="272" fill="#E2E8F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">You can query the eCourts service instantly using your 16-digit CNR number.</text>
+  <text x="145" y="292" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">✓ Verified with NJDG real-time schema · Hearing date & cause list extracted.</text>
+  
+  <!-- Interactive Action Chips inside Chat -->
+  <rect x="145" y="306" width="130" height="22" rx="11" fill="#0F172A" stroke="#38BDF8" stroke-opacity="0.5"/>
+  <text x="157" y="321" fill="#38BDF8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">→ Check Case CNR</text>
+
+  <rect x="285" y="306" width="145" height="22" rx="11" fill="#0F172A" stroke="#818CF8" stroke-opacity="0.5"/>
+  <text x="297" y="321" fill="#818CF8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600">→ View Cause List PDF</text>
+
+  <!-- Input bar mockup at bottom -->
+  <rect x="80" y="380" width="640" height="50" rx="25" fill="#1E293B" stroke="#475569"/>
+  <text x="110" y="410" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="13">Ask any legal procedure or query case record...</text>
+  <circle cx="690" cy="405" r="16" fill="url(#glowGrad)"/>
+  <path d="M685 405 L692 398 L692 412 M692 398 L697 403" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
