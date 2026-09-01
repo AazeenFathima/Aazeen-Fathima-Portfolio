@@ -90,7 +90,7 @@ export default function Hero() {
                   onError={(e) => {
                     // Fallback to stylized SVG placeholder if image missing
                     e.currentTarget.onerror = null;
-                    e.currentTarget.src = "/assets/favicon.svg";
+                    e.currentTarget.src = `${import.meta.env.BASE_URL}assets/favicon.svg`;
                   }}
                 />
               </div>

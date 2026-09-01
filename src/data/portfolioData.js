@@ -9,8 +9,8 @@ export const personalInfo = {
   linkedinUsername: "aazeen-fathima",
   github: "https://github.com/aazeenfathima",
   githubUsername: "aazeenfathima",
-  resumePath: "/assets/Aazeen_Fathima_Resume.pdf",
-  profileImage: "/assets/profile.jpg",
+  resumePath: `${import.meta.env.BASE_URL}assets/Aazeen_Fathima_Resume.pdf`,
+  profileImage: `${import.meta.env.BASE_URL}assets/profile.jpg`,
   careerObjective: "To secure a challenging role in software development where I can apply my academic knowledge, practical experience in low-code platforms, and analytical skills to build scalable, efficient, and impactful digital solutions while continuously advancing my professional growth."
 };
 
@@ -99,12 +99,12 @@ export const projectsList = [
     subtitle: "Low-Code Cloud Healthcare System",
     category: "Low-Code Development",
     platform: "Zoho Creator",
-    image: "/assets/projects/zoho-patient.png",
+    image: `${import.meta.env.BASE_URL}assets/projects/zoho-patient.png`,
     description: "A secure, enterprise cloud application engineered to streamline patient record keeping, digitize clinical intake workflows, and eliminate manual data entry discrepancies.",
     points: [
       "Developed a centralized cloud-based patient registry enabling healthcare practitioners to access medical histories and consultation logs instantly.",
       "Engineered automated validation rules and dynamic form logic that significantly reduced clerical errors.",
-      "Structured optimized relational data retrieval mechanisms, cutting down record lookup times and enhancing administrative productivity."
+      "Structured optimized relational data retrieval mechanisms, cutting down record lookup times and enhancing administrative productivity.",
     ],
     techStack: ["Zoho Creator", "Deluge", "Cloud Database", "Role-Based Access", "Automation Workflows"],
     status: "Completed & Deployed"
@@ -115,7 +115,7 @@ export const projectsList = [
     subtitle: "Judicial Information & Accessibility Assistant",
     category: "AI & Legal Tech",
     platform: "Wadhwani Ignite Program (AI/Startup)",
-    image: "/assets/projects/neura-chatbot.png",
+    image: `${import.meta.env.BASE_URL}assets/projects/neura-chatbot.png`,
     description: "An AI-powered conversational platform conceptualized to democratize access to justice, deliver plain-language legal guidance, and bridge the public with judicial services.",
     points: [
       "Contributed to the strategic development planning of an AI-powered virtual assistant focused on judicial transparency and public legal service accessibility.",
